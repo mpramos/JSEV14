@@ -69,6 +69,71 @@ console.log(paisUno);
 const pais='Bolivia'
 console.log(pais);
 
+// String nombre=''
+// int numero='maria'
+// float numero=7.8 
+// boolean bandera=true
+
+
+
+//! TIPOS DE DATOS PRIMITIVOS
+//* texto ->'Susana' = cadena|string
+let nombre='Susana'
+{
+    nombre=true
+    console.log(nombre);
+    
+}
+
+let paisU=`Boliva`
+let mensaje=`mensaje : ${paisU}`
+console.log(mensaje);
+console.log(typeof mensaje);
+//* UNDEFINED
+let nombreF
+console.log(nombreF);
+console.log(typeof nombreF);
+//* NULL
+let caja=null
+console.log(caja);
+console.log(typeof caja);
+
+
+
+//* numero ->45 entero | 45.6 decimal
+let edadS=45 //-> valor (tipos de datos)
+let edadSu=45.6
+let numeros=1232432434123343434
+console.log(numeros);
+console.log(typeof (1/0));
+console.log(typeof (2*3));
+console.log(typeof (2+3));
+console.log(typeof (2-3)); //-1
+
+// console.log(typeof (2*'h'));
+console.log((2*'h')); //NaN
+//* BIGTINT
+let numeroGrande=12312312324234353454654623424343543546456n
+console.log(numeroGrande);
+console.log(typeof numeroGrande);
+
+console.log(typeof null); null
+let nombre=null
+console.log(nombre);
+
+
+//* boolean ->true | false
+let isFalse=true
+isFalse=false
+
+let nombreP='pedro'
+console.log(nombreP);
+
+//* operadores *+-/% typeof (!operador)
+console.log(typeof nombreP);
+console.log(typeof isFalse);
+
+//! TIPOS DE DATOS COMPLEJOS
 
 
 
