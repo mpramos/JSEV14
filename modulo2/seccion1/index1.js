@@ -62,7 +62,12 @@ function test()
 test()
 console.log(nombre);
 
+let paisUno
+paisUno='Bolivia'
+console.log(paisUno);
 
+const pais='Bolivia'
+console.log(pais);
 
 
 
