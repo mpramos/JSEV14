@@ -234,6 +234,50 @@ console.log(usuarios[0].avatar);
 console.log(usuarios[1]);
 console.log(usuarios[2]);
 
+//!PROPIEDADES DE LOS ARREGLOS
+
+const animals=['🐓','🐰','🐱','🐳','🐴','🐓','🐓','🐢']
+// const numerosC=[2,45,6,7,8]
+// console.log(numerosC.length);
+//? IndexOf
+// console.log(animals.indexOf('🐢'));
+// console.log(animals.indexOf('🐴'));
+// console.log(animals.indexOf('🤴')); //-1
+// console.log(animals.indexOf('🐓')); 
+//? PUSH
+animals.push('🐳')
+animals.push('🐱‍👤')
+animals.push('🧑')
+animals.push('👩')
+//?POP
+// console.log('antes del pop');
+// console.log(animals);
+animals.pop()
+// console.log('despues del pop');
+// console.log(animals);
+animals.pop()
+// console.log(animals);
+//? Unshift
+animals.unshift('🐶')
+animals.unshift('👩‍🦰')
+console.log(animals);
+//? Shift
+animals.shift()
+console.log('Despues del shift');
+console.log(animals);
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
