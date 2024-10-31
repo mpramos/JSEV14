@@ -135,7 +135,123 @@ console.log(typeof isFalse);
 
 //! TIPOS DE DATOS COMPLEJOS
 
+let objeto = {
+    nr:600,
+    str:'text'
+}
+console.log(objeto.nr);
+console.log(objeto.str)
+ let nombre='maria' // string|cadena
+ console.log(nombre);
+ let edadM=40 // numero
+ let avatar='👩‍🦰'
+ let nombreJ='Juan' // string|cadena
+ console.log(nombre);
+ let edadJ=40 // numero
+ let avatarJ='😎'
+ console.log(avatar);
+ let puntos=30
+ let usuario1= {
+    nombre:'maria', // string
+    edad:40, //numero
+    avatar:'👩‍🦰',
+    puntos:30
+ }
+ let usuario2= {
+    nombre:'juan', // string
+    edad:45, //numero
+    avatar:'🧑',
+    puntos:20
+ }
+ let usuario3= {
+    nombre:'roberto', // string
+    edad:50, //numero
+    avatar:'🧑',
+    puntos:20
+ }
+console.log('EDAD DE ANTES');
 
+console.log(usuario3.edad);
+usuario3.edad=51
+usuario3.avatar='👨‍🎓'
+console.log('EDAD DESPUES');
+console.log(usuario3.edad);
+console.log(usuario3);
+console.log('ELMINACION DE PUNTOS');
+
+delete usuario3.puntos
+console.log(usuario3);
+//?Arreglo
+
+let diasSemana=['lunes','martes','miercoles','jueves','viernes','sabado','domingo']
+console.log(diasSemana);
+console.log('INDICE');
+
+console.log(diasSemana[3]);
+
+let emojis=['🧑','😎','👩‍🦰','⭐']
+console.log(emojis);
+console.log(emojis[3]);
+emojis[1]='🐱'
+console.log(emojis);
+
+//  let animales=['🐱','🐶','🐢','🐱‍👤']
+let animales=[]
+console.log('ANTES ');
+
+console.log(animales);
+animales[0]='🐱'
+animales[1]='🐶'
+animales[2]='🐢'
+animales[3]='🐱‍👤'
+console.log('despues ');
+console.log(animales);
+
+
+let cajaCadaTipo=['maria',67,true,undefined]
+console.log(cajaCadaTipo[2]);
+
+// ANIDADAS
+let coleccionArreglos=[['😃','😁','🥺'],['👩‍🦰','🧑','👨'],['👮‍♀️','👮‍♂️','🕵️‍♀️']]
+
+console.log(coleccionArreglos[2][2]);
+
+
+console.log(coleccionArreglos);
+console.log('CARITAS');
+console.log(coleccionArreglos[0]);
+console.log('CARITAS DE PERSONAS');
+console.log(coleccionArreglos[1]);
+console.log('CARITAS DE POLICIAS + DETECTIVE');
+console.log(coleccionArreglos[2]);
+
+let usuarios =[
+    {nombre:'maria',avatar:'👩'},
+    {nombre:'juan',avatar:'🧑'},
+    {nombre:'jose',avatar:'🤴'}
+]
+console.log(usuarios[0].avatar);
+console.log(usuarios[1]);
+console.log(usuarios[2]);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+ 
 
 
 
