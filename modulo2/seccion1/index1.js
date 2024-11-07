@@ -235,7 +235,6 @@ console.log(usuarios[1]);
 console.log(usuarios[2]);
 
 //!PROPIEDADES DE LOS ARREGLOS
-
 const animals=['🐓','🐰','🐱','🐳','🐴','🐓','🐓','🐢']
 // const numerosC=[2,45,6,7,8]
 // console.log(numerosC.length);
@@ -244,7 +243,7 @@ const animals=['🐓','🐰','🐱','🐳','🐴','🐓','🐓','🐢']
 // console.log(animals.indexOf('🐴'));
 // console.log(animals.indexOf('🤴')); //-1
 // console.log(animals.indexOf('🐓')); 
-//? PUSH
+// ? PUSH
 animals.push('🐳')
 animals.push('🐱‍👤')
 animals.push('🧑')
@@ -260,42 +259,43 @@ animals.pop()
 //? Unshift
 animals.unshift('🐶')
 animals.unshift('👩‍🦰')
-console.log(animals);
+// console.log(animals);
 //? Shift
 animals.shift()
 console.log('Despues del shift');
 console.log(animals);
+//? Reverse
+// console.log(animals.reverse());
+//? Slice
+let dosAnimles= animals.slice(0,3)
+console.log(dosAnimles)
+console.log('DESPUES DE REALIZAR EL CORTE ');
 
+console.log(animals)
 
+//? CONCAT
+/* Este metodo me sirve para unir mas de una coleccion*/
+let comidas=['🍔','🍟','🌭','🍿','🍕']
+let frutas=['🍎','🍐','🍉','🍊','🍇']
+console.log(comidas);
+console.log(frutas);
+let comidasFrutas= comidas.concat(frutas)
+console.log(comidasFrutas);
+let x=25 // variable almacenar el valor de la edad x: mujer
+let y=25 // variable almacenar el valor de la edad y: varon
+let edadMujer=45 // variable para almacenar la edad de una mujer 
 
+//! COMENTARIOS
 
+// let ignorar
+// console.log('muestre algo');
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
- 
- 
-
-
-
+/* let comidas=['🍔','🍟','🌭','🍿','🍕']
+let frutas=['🍎','🍐','🍉','🍊','🍇']
+console.log(comidas);
+console.log(frutas);
+djdjfjjf
+jfhgbtbhgtbh
+*/ 
+let z= /* aca es para probar que salga un res*/ 4/0
+console.log(z);
