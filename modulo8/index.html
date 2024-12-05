@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practica</title>
+</head>
+<body>
+    <header>
+        <h1 class="ojos">ojos</h1>
+        <h1 class="ojos">ojos</h1>
+        <h1 class="ojos">ojos</h1>
+        <h1 id="ojo" >ojos</h1>
+        <h2 >nariz</h2>
+        <h3>boca</h3>
+    </header>
+    <script>
+        const eleOjos= document.getElementsByTagName('h1')
+        console.log('Obteniendo el elemento por el nombre de la etiqueta');
+        for (const element of eleOjos) {
+            console.log(element);
+        }
+        const eleSegundoOjo= document.getElementById('ojo')
+        console.log('Obteniendo el elemento por el id de la etiqueta');
+        console.log(eleSegundoOjo);
+        const eleOjosGrupos= document.getElementsByClassName('ojos')
+        console.log('Obteniendo el elemento por clases');
+        console.log(eleOjosGrupos);
+        for (const element of eleOjosGrupos) {
+            console.log(element);
+            
+        }
+                
+
+    </script>
+</body>
+</html>

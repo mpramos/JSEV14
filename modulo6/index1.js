@@ -78,3 +78,35 @@ try {
     }
 }
 console.log(a); // -> -2
+
+try {
+    throw new Error('Algo salio mal') 
+} catch (error) {
+    console.log('Error capturado '+ error.message);
+    
+}
+
+try {
+    throw 404
+    
+} catch (error) {
+    console.log('error capturado ' + error);
+    
+}
+
+
+const validacionNumero=(num)=>{
+    if (typeof num!=='number') {
+        throw new Error('el valor debe ser un numero')
+    }
+    console.log('numero valido ' + num);
+    
+
+}
+
+try {
+    validacionNumero(8)
+} catch (error) {
+    console.log('error capturado ' + error.message);
+    
+}
