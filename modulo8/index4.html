@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+   
+</head>
+<body>
+    <h1>Primer Titulo</h1>
+    <h1>Segundo Titulo</h1>
+    <h1>Tercer Titulo</h1>
+    <h1></h1>
+    <ul>
+    </ul>
+    <ol>
+        <li>item</li>
+        <li>item</li>
+        <li>item</li>
+        <li>item</li>
+        <li>item</li>
+    </ol>
+    <script>
+        const titulos=document.querySelectorAll('h1')
+        titulos[3].textContent='Cuarto Titulo'
+        const lista=`
+        <li>item 1</li>
+        <li>item 2</li>
+        <li>item 3</li>`    
+        const ul= document.querySelector('ul')
+        ul.innerHTML=lista
+
+        const ol= document.querySelector('ol')
+        ol.innerHTML=''
+        titulos.forEach((titulo,i) => {
+            if (i % 2 ===0) {
+                titulo.style.backgroundColor='green'
+                titulo.style.fontSize='24px'
+            } else {
+                titulo.style.backgroundColor='red'
+                titulo.style.fontSize='34px'
+                 }
+        });
+
+    </script>
+</body>
+</html>
