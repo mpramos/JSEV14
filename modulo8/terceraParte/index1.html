@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button>Click Me</button>
+    <button onclick="clickMe()">Click me second</button>
+    <button id="dobleClick">Click me 👀👀</button>
+    <button id="mouseEnter">Click me 🐀</button>
+    
+    <script>
+
+        const clickMe=()=>{
+            alert('Me hiciste Click')
+        }
+        const button= document.querySelector('button')
+        button.addEventListener('click',e=>{
+            console.log('el objeto event ', e);
+            console.log('elemento que esta escuchando el evento ', e.target);
+            console.log(
+                'el contenido de la etiqueta que disparó el evento ', e.target.textContent
+            );
+        })
+        const buttonDbl= document.querySelector('#dobleClick')
+        buttonDbl.addEventListener('dblclick',e=>{
+             console.log('el objeto event ', e);
+             console.log('elemento que esta escuchando el evento ', e.target);
+             console.log(
+                 'el contenido de la etiqueta que disparó el evento ', e.target.textContent
+             );
+             alert('Hiciste doble click')
+            })
+            const buttonMouseEnter= document.querySelector('#mouseEnter')
+            buttonMouseEnter.addEventListener('mouseenter',(e)=>{
+                console.log('esta ingresando al elemento 🐀');
+                console.log('el objeto event ', e);
+                console.log('elemento que esta escuchando el evento ', e.target);
+                console.log(
+                'el contenido de la etiqueta que disparó el evento ', e.target.textContent
+                );
+                
+        }) 
+    </script>
+</body>
+</html>
