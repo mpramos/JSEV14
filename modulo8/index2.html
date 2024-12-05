@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="titulo">Titulo</h1>
+    <h1 class="titulos" >Titulo 2</h1>
+    <h2 class="titulos">Subtitulo</h2>
+    <h3 class="titulos">Titulo</h3>
+    <h4 >Titulo</h4>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim blanditiis quis nostrum accusamus eos et atque animi nemo, assumenda repellendus porro asperiores expedita voluptatum quisquam quaerat reprehenderit nisi rem fugit.</p>
+    <img class="titulos" src="https://rickandmortyapi.com/api/character/avatar/286.jpeg" alt="avatar">
+
+   <script>
+      let h1Etiqueta= document.querySelector('h1')
+      console.log('Etiqueta');
+      
+      console.log(h1Etiqueta);
+      let h1Id=document.querySelector('#titulo')
+      
+      console.log('Identificador');
+      console.log(h1Id);
+    //   let titulos= document.querySelector('.titulos')
+      let titulos= document.querySelectorAll('.titulos')
+      console.log('Clases');
+      for (const element of titulos) {
+          console.log(element);
+          
+        }
+        let h1s= document.querySelectorAll('h1')
+        console.log('Etiquetas h1');
+        for (const element of h1s) {
+            console.log(element);
+            
+        }
+        
+
+   </script> 
+
+</body>
+</html>
