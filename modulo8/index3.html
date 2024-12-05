@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .titulo{
+            color: aqua;
+        }
+    </style>
+</head>
+<body>
+    <h1>Titulo</h1>
+    <h1>Titulo</h1>
+    <h1>Titulo</h1>
+    <h1>Titulo</h1>
+    <h1>Titulo</h1>
+    <h1>Titulo</h1>
+    <script>
+        // setAttribute
+        const titulos=document.querySelectorAll('h1')
+        titulos[3].setAttribute('class','titulo')
+        console.log(titulos);
+        titulos[3].setAttribute('id','cuarto-titulo')
+        // Sin setAttribute
+        titulos[4].className= 'titulo'
+        titulos[4].id='quinto-titulo'
+        // classList
+        titulos[5].classList.add('titulo', 'cabecera-titulos')
+
+        
+    </script>
+</body>
+</html>
