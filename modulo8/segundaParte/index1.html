@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <ul>
+        <li>item</li>
+        <li>item</li>
+        <li>item</li>
+    </ul>
+
+    <script>
+        let titulo= document.createElement('h1')
+        titulo.className='titulo'
+        titulo.style.fontSize='24px'
+        titulo.textContent='Creando elemento de  HTML '
+        console.log(titulo);
+        document.body.appendChild(titulo)
+        let titulos
+        for (let i = 0; i <3; i++) {
+            titulos = document.createElement('h1')
+            titulos.className='titulos'
+            titulos.style.fontSize='24px'
+            titulos.textContent=i
+            console.log(titulos);
+            document.body.appendChild(titulos)    
+        }
+        const ul= document.querySelector('ul')
+        const lista= document.querySelectorAll('li')
+        for (const item of lista) {
+            ul.removeChild(item)
+        }
+
+
+
+    </script>
+</body>
+</html>
