@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1> Inputs Event Change </h1>
+
+    <input type="text" placeholder="escribir algo">
+    <p></p>
+    <input type="text"  id="masa" placeholder="ingrese la cantidad de la masa">
+    <p id="pmasa"></p>
+    <h3>Evento key </h3>
+    <script>
+        const input=document.querySelector('input')
+        const p= document.querySelector('p')
+        const inputMasa=document.querySelector('#masa')
+        const pMasa= document.querySelector('#pmasa')
+        input.addEventListener('blur',(e)=>{
+                    pMasa.textContent='El campo es requerido'
+                    pMasa.style.color='red'
+        })
+
+
+        input.addEventListener('input',e=>{
+            p.textContent=e.target.value
+        })
+        document.body.addEventListener('keypress',e=>{alert(e.keyCode)})
+    </script>
+</body>
+</html>

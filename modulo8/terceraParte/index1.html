@@ -10,8 +10,27 @@
     <button onclick="clickMe()">Click me second</button>
     <button id="dobleClick">Click me 👀👀</button>
     <button id="mouseEnter">Click me 🐀</button>
+
+        <h1>INDICE DE MASA CORPORAL</h1>
+        <input type="text" id="masa" placeholder="Masa en kilogramos">
+        <input type="text" id="altura" placeholder="Altura en metros">
+        <button id="btnImc">Calcular IMC</button>
     
     <script>
+
+            const masa= document.querySelector('#masa')
+            const altura= document.querySelector('#altura')
+            const btn= document.querySelector('#btnImc')
+
+            let imc
+            btn.addEventListener('click',()=>{
+                imc=masa.value / altura.value ** 2
+                alert(`tu imc es ${imc}`)
+                console.log(imc);
+                
+            })
+
+
 
         const clickMe=()=>{
             alert('Me hiciste Click')
