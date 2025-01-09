@@ -1,0 +1,20 @@
+Reglas Generales de Bootstrap para mt (Margin Top)
+Clases de Espaciado:
+
+m: Margin (todos los lados).
+mt-1: Margin top (arriba). // margin-top:0.25rem
+mb: Margin bottom (abajo).
+ml: Margin left (izquierda).
+mr: Margin right (derecha).
+mx: Margin horizontal (izquierda y derecha).
+my: Margin vertical (arriba y abajo).
+Escala de Valores:
+
+0: Sin margen (margin: 0).
+1: Muy pequeño (margin: 0.25rem).
+2: Pequeño (margin: 0.5rem).
+3: Medio (margin: 1rem).
+4: Grande (margin: 1.5rem).
+5: Muy grande (margin: 3rem).
+auto: Margen automático (generalmente para centrar).
+https://getbootstrap.com/docs/5.3/utilities/spacing/
